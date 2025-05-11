@@ -30,7 +30,7 @@ function sendMessage() {
   setTimeout(() => {
       const botMessage = document.createElement("div");
       botMessage.className = "chat-bot";
-      botMessage.textContent = "Aku belum bisa menjawab, tapi aku belajar terus!";
+      botMessage.textContent = "Maaf, Aku masih dalam tahap pengembangan! Tunggu aku ya.";
       content.appendChild(botMessage);
       content.scrollTop = content.scrollHeight; // scroll ke bawah
   }, 1000);
