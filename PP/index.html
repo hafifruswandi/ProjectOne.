@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gen-Z Health</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div class="glass-container">
+    <header>
+      <h1>💖 Gen-Z Health Portal</h1>
+      <p>Platform kesehatan modern untuk generasi masa kini</p>
+    </header>
+
+    <section class="features">
+      <div class="feature-card" onclick="showArticles()">
+        <img src="assets/icon-health.png" alt="Artikel"/>
+        <h3>Artikel</h3>
+        <p>Cek tips, info, & tren kesehatan terbaru.</p>
+      </div>
+      
+
+      <div class="feature-card" onclick="window.location.href='monitoring.html'">
+        <img src="assets/icon-monitor.png" alt="Monitoring"/>
+        <h3>Pantau</h3>
+        <p>Monitor kondisi fisik kamu secara real-time.</p>
+      </div>
+    </section>
+
+    <section class="articles-section" id="articles-section" style="display: none;">
+      <h2>📚 Artikel Kesehatan</h2>
+      <div class="article-list" id="article-list"></div>
+    </section>
+    
+
+    <footer>
+      <p>&copy; 2025 Gen-Z Health. Dibuat oleh King Cháth 👑</p>
+    </footer>
+  </div>
+
+  <!-- Floating Chat Button -->
+  <div class="chat-button" onclick="toggleChat()">
+    <img src="assets/icon-chat.png" alt="Chatbot">
+  </div>
+
+  <!-- Chatbox -->
+  <div class="chatbox" id="chatbox">
+    <div class="chat-header">
+      <span>Gen-Z HealthBot 🤖</span>
+      <div class="chat-header-buttons">
+        <button onclick="clearChat()" class="close-btn">🗑️</button>
+        <button onclick="toggleChat()" class="delete-btn">✕</button>
+      </div>
+    </div>
+    <div class="chat-content" id="chat-content">
+      <div class="chat-bot">Halo! Aku HealthBot. Ada yang bisa kubantu?</div>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Tulis pesan...">
+      <button onclick="sendMessage()">Kirim</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
